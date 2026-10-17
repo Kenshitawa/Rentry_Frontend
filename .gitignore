@@ -1,0 +1,11 @@
+node_modules
+.next
+.env*
+!.env.example
+dist
+*.db*
+*.sqlite*
+src/app/api/
+src/lib/database.ts
+src/lib/admin-auth.ts
+src/lib/mpesa.ts

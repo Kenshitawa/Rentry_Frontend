@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: rentry-frontend
+    runtime: node
+    plan: starter
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_VERSION
+        value: 22.13.0
+      - key: BACKEND_API_URL
+        value: https://rentry-backend.onrender.com
+      - key: NEXT_PUBLIC_WHATSAPP_NUMBER
+        value: 254700000000
